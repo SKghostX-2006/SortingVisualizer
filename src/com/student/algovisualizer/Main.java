@@ -13,10 +13,21 @@ public class Main {
         // 2. Setup the Canvas
         VisualizerPanel panel = new VisualizerPanel();
         
-        // 3. Register our Algorithms
-        Sorter[] algorithms = { new BubbleSort(), new SelectionSort() };
-        String[] algoNames = { algorithms[0].getName(), algorithms[1].getName() };
+        // 3. Register our Algorithms (The Big Four!)
+        Sorter[] algorithms = { 
+            new BubbleSort(), 
+            new SelectionSort(), 
+            new InsertionSort(), 
+            new QuickSort() 
+        };
 
+        String[] algoNames = { 
+            algorithms[0].getName(), 
+            algorithms[1].getName(), 
+            algorithms[2].getName(), 
+            algorithms[3].getName() 
+        };
+        
         // 4. Create the Dashboard (Bottom Menu)
         JPanel controlPanel = new JPanel();
         controlPanel.setBackground(Color.DARK_GRAY);
