@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        // We use invokeLater to ensure the UI builds safely
+        // InvokeLater to ensure the UI builds safely
         SwingUtilities.invokeLater(() -> {
             
             // 1. Create the Main Window
@@ -13,7 +13,7 @@ public class Main {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setLayout(new BorderLayout());
 
-            // Add your partner's beautiful VisualizerPanel to the center
+            // Add VisualizerPanel to the center
             VisualizerPanel panel = new VisualizerPanel();
             frame.add(panel, BorderLayout.CENTER);
 
@@ -21,7 +21,7 @@ public class Main {
             JPanel controlPanel = new JPanel();
             controlPanel.setBackground(Color.DARK_GRAY);
 
-            // 3. Register ALL 10 of your Algorithms!
+            // 3. Register ALL 10 Algorithms!
             Sorter[] algorithms = {
                 new BubbleSort(), new SelectionSort(), new InsertionSort(),
                 new QuickSort(), new MergeSort(), new HeapSort(),
